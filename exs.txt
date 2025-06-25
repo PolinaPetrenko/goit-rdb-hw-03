@@ -1,0 +1,34 @@
+p1-hw3. 
+
+select * from products;
+
+
+p1.1-hw3. 
+
+select name, phone from shippers;
+
+
+p2-hw3. 
+
+select 
+avg(price), max(price), min(price) 
+from products;
+
+
+p3-hw3.
+
+select distinct category_id, price
+from products
+order by price desc
+limit 10;
+
+
+p4-hw3.
+
+select count(*) from products
+where price between 20 and 100;
+
+p5-hw3.
+
+select supplier_id, count(*), avg(price) from products
+group by supplier_id;
